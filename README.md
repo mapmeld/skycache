@@ -36,3 +36,7 @@ The idea is to store the MBTiles on the server until it's actually requested, an
 first walkthrough will be slow. But for many high-traffic projects, people are looking at the same areas, which
 will load quickly. For global map tiles, like the OSM layers, unexplored areas like Timbuktu will stay in an
 MBTiles file until someone is using them. It's more efficient that way.
+
+## Install Instructions
+
+<a href="https://github.com/mapmeld/skycache/blob/master/INSTALL.md">Install How-To</a>
