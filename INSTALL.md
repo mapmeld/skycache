@@ -7,20 +7,23 @@ other services where you can't write to the file system.
 easy_install mbutil
 ```
 
-* Install and start memcached
-
-```
-sudo apt-get install memcached
-```
-
 * Install <a href="http://webpy.org/">web.py</a>
 
 ```
 sudo easy_install web.py
 ```
 
-* Start Skycache server
+* Get SkyCache
 
 ```
-python skycache.py &
+git clone https://github.com/mapmeld/skycache.git
+cd skycache
+```
+
+* Start SkyCache server and peace out
+
+```
+nohup python skycache.py 80 &
+disown
+exit
 ```
