@@ -12,14 +12,8 @@ $def with (page, title=None)
   </head>
   <body>
     <h2>SkyCache</h2>
-    $:page
-    <hr/>
-    <h4>Upload your MBTiles file</h4>
-    <form action="/" method="POST" enctype="multipart/form-data">
-      <input type="file" name="tiles"/>
-      <br/><br/>
-      <input type="submit" value="Start"/>
-    </form>
+    Your tiles are available at:<br/>
+    /static/$:page/$Z/$X/$Y.png
     <hr/>
     <a href="https://github.com/mapmeld/skycache">Source code on GitHub</a>
   </body>
